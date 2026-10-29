@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clima ao Vivo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Clima ao Vivo</h1>
+    
+    <!-- Relógio Local / Brasília -->
+    <div id="clock-box" class="box">
+      <p id="clock">Horário: --:--:--</p>
+    </div>
+
+    <!-- Busca de Clima -->
+    <div class="box">
+      <input type="text" id="city" placeholder="Digite o nome da cidade">
+      <button onclick="getWeather()">Buscar Clima</button>
+
+      <div id="weather-info">
+        <h2 id="city-name"></h2>
+        <p id="temperature"></p>
+        <p id="description"></p>
+        <p id="humidity"></p>
+        <p id="wind-speed"></p>
+      </div>
+    </div>
+
+    <!-- Verificação de Idade -->
+    <div class="box">
+      <h3>Entrada no Evento</h3>
+      <input type="number" id="age" placeholder="Sua idade">
+      <button onclick="checkAge()">Verificar Idade</button>
+      <p id="age-result"></p>
+    </div>
+
+    <!-- Alterar Tema -->
+    <div class="box">
+      <button onclick="modo()">Alterar Tema</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

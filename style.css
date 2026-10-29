@@ -1,0 +1,68 @@
+:root {
+  --bg-color: #eef2f3;
+  --card-bg: #ffffff;
+  --text-color: #333;
+  --primary-color: #007bff;
+}
+
+body.dark-mode {
+  --bg-color: #181824;
+  --card-bg: #232334;
+  --text-color: #f4f7f6;
+  --primary-color: #3b82f6;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: 0.3s;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.box {
+  background-color: var(--card-bg);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 9px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#age-result {
+  font-weight: bold;
+  margin-top: 8px;
+}
